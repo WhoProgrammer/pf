@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHO PROGRAMMER</title>
+    <link rel="stylesheet" href="style.css">
+    <!--==================== EXTRA LINK USE ===================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-..." crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lobster&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/whoImg.jpeg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- PAGE LODE -->
+
+<div class="page-load">
+    <div class="container">
+      <p>Welcome my portfolio!</p>
+  </div>
+  <div class="loading-page">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" id="svg" ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+      <div class="name-container" >
+          <div class="logo-name">WHO PROGRAMMER</div>
+      </div>
+  </div>
+</div>
+
+
+    <!-- PAGE LOAD -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+  integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+   
+    <!-- ==================== MAIN =================== -->
+    <nav class="nav" id="nav">
+      <div class="nav__menu container" id="nav-menu">
+          <div class="nav__shape"></div>
+
+          <div class="nav__close" id="nav-close">
+              <i class='bx bx-x'></i>
+          </div>
+          
+          <div class="nav__data">
+              <div class="nav__mask">
+                  <img src="user.jpg" alt="" class="nav__img">
+              </div>
+
+              <span class="nav__greeting">Hi, I'm</span>
+              <h1 class="nav__name">MD <br> Parvaj</h1>
+          </div>
+
+          <ul class="nav__list">
+              <li class="nav__item">
+                  <a href="#hero" class="nav__link active-link">
+                      <i class='bx bx-home' ></i> Home 
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="nav__link">
+                      <i class='bx bx-user'></i> About
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#section1" class="nav__link">
+                      <i class='bx bx-briefcase-alt-2'></i> Portfolio
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="https://whoprogrammer.github.io/pf2/" target="_blank" class="nav__link">
+                      <i class='bx bx-bookmark'></i> Other
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#contact" class="nav__link">
+                      <i class='bx bx-message-square-detail'></i> Contact
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <!--=============== MAIN ===============--> 
+ 
+  <main class="main" id="main">
+      <!--=============== HEADER ===============-->
+      <header class="header" id="header">
+          <nav class="header__nav container">
+              <a href="#" class="header__logo logo">
+                  <img src="img/logo1.png" alt="">
+              </a>
+
+              <!-- Toggle button -->
+              <div class="header__toggle" id="header-toggle">
+                  <i class='bx bx-grid-alt'></i>
+              </div>
+          </nav>
+      </header>
+
+    <!-- ==================== HEADER =================== -->
+   <!-- ABOUT PAGE -->
+   <div class="about" id="about">
+    <div class="container">
+      <div>
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">About my self...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body shadow-lg" style="text-align: justify;">
+                    <span style="font-size: 23px;">Hi</span>, I'm passionate about engaging user experiences, I'm a dedicated front-end developer. My journey into front-end development began with a curiosity for design and a drive to create immersive digital interactions.
+
+                Proficient in HTML, CSS and JavaScript, I specialize in translating design mockups into functional and responsive websites. Using my expertise in front-end frameworks like React.js and Next.js, I specialize in creating dynamic and interactive web applications that captivate users.
+
+                With a keen eye for detail and a focus on user-centered design principles, I strive to deliver pixel-perfect solutions that not only meet client expectations. Whether optimizing website performance, enhancing accessibility or ensuring cross-browser compatibility, I am committed to delivering high-quality front-end solutions that improve businesses and brands' digital presence.
+
+                Beyond coding, I am an avid learner who stays updated with the latest trends and technologies in front-end development. I thrive in collaborative environments and enjoy working closely with designers and back-end developers to bring projects to life.
+
+                Let's collaborate together and create exceptional digital experiences!
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!-- ==================== HERO =================== -->
+    <section class="hero" id="hero">
+        <div class="container p-md-5 z-3">
+            <div>
+            <p>TEMPLATES FOR WEBSITE</p>
+            <h1>Website Templates & design</h1>
+            <p>I am able to create beautiful, modern, and easy-to-use websites to improve the workflow of designers and developers.</p>
+                <div class="d-flex flex-wrap btns" style="z-index: 5;">
+                    <a href="#section1"><button>Browse templates <i class="fa-solid fa-chevron-right i1"></i> <i class="fa-solid fa-arrow-right i2"></i></button></a>
+                     <a href="http://parvez1a2b9c@gmail.com" target="_blank"><button>Contact me  <i class="fa-solid fa-chevron-right i1"></i> <i class="fa-solid fa-arrow-right i2"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="auto-slid">
+            <div class="slider-div1">
+                <div class="slider1">
+                    <div class="slide-track1">
+            
+                        <!-- 9 SLIDES -->
+                        <a href="#section1"><div class="slide">
+                           <img src="img/1.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/2.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/3.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/4.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/5.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/6.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/7.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/8.png" alt="">
+                        </div></a>
+                        <!-- 9 SLIDES -->
+                        <!-- SAME 9 SLIDES (DOUBLED) -->
+                        <a href="#section1"><div class="slide">
+                           <img src="img/9.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/10.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/11.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/12.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/13.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/14.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/10.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/8.png" alt="">
+                        </div></a>
+                        <!-- SAME 9 SLIDES (DOUBLED) -->
+                        </div>
+                    </div>
+            </div>
+            <div class="div2">
+              <div class="slider-div1">
+                <div class="slider1">
+                    <div class="slide-track1">
+            
+                        <!-- 9 SLIDES -->
+                        <a href="#section1"><div class="slide">
+                           <img src="img/14.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/13.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/12.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/11.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/10.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/1.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/2.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/3.png" alt="">
+                        </div></a>
+                        <!-- 9 SLIDES -->
+                        <!-- SAME 9 SLIDES (DOUBLED) -->
+                        <a href="#section1"><div class="slide">
+                           <img src="img/4.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/5.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/6.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/7.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/8.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/9.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/10.png" alt="">
+                        </div></a>
+                        <a href="#section1"><div class="slide">
+                           <img src="img/4.png" alt="">
+                        </div></a>
+                        <!-- SAME 9 SLIDES (DOUBLED) -->
+                        </div>
+                    </div>
+            </div>  
+            </div>
+        </div>
+    </section>
+      <!-- ==================== SECTION1 =================== -->
+      <section class="section1 p-md-5" id="section1">
+        <div class="row">
+            <div class="col-md-3 px-3 d-none d-xl-block">
+            <div class=" container p-3 div">
+                <div class="box">
+                    <div class="d-flex justify-content-between">
+                        <h5>Filters</h5> <h6>Reset</h6>
+                    </div>
+                    <div class="">
+                        <label for="text">Category</label>
+                        
+                        <div class="accordion input" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingone">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                                <span>Accordion Item #3</span>
+                              </button>
+                            </h2>
+                            <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingone" data-bs-parent="#accordionExample">
+                            
+                              <ul>
+                                <div class="check-box">
+
+                                  <img src="img/coming.png" width="100%" height="100%" alt="">
+
+                                </div>
+                              </ul>
+
+                            </div>
+                          </div>
+
+                        </div>
+
+                    </div>
+                    <div class="">
+                        <label for="color">Color</label>
+                        <div class="accordion input" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingtwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                                <span>Accordion Item #3</span>
+                              </button>
+                            </h2>
+                            <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+                             
+                              <ul>
+                                <div class="check-box">
+
+                                  <img src="img/coming.png" width="100%" height="100%" alt="">
+
+                                </div>
+                              </ul>
+
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="tipe">Type</label>
+                        <div class="accordion input" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span>Accordion Item #3</span>
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                             
+                              <ul>
+                                <div class="check-box">
+
+                                  <img src="img/coming.png" width="100%" height="100%" alt="">
+
+                                </div>
+                              </ul>
+
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="length"></div>
+          </div>
+            <div class="col-md-9 container div">
+                <h1>Website Templates</h1> <br><br>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="card" >
+                        <img class="card-img-top" src="img/1.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">eCommerce web design.</h5>
+                          <p class="card-text">it is my simple eCommerce web design.</p>
+                        </div>
+                        <div class="card-body">
+                          <a href="https://e3-five.vercel.app/component" target="_blank" class="card-link stretched-link">Explore page</a>
+                          <!-- <a href="./"target="_blank" class="card-link">Another link</a> -->
+                        </div>
+                      </div>
+                      <div class="card" >
+                        <img class="card-img-top" src="img/2.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">ECommerce Shop Website Template</h5>
+                          <p class="card-text">it is my simple eCommerce web design.</p>
+                        </div>
+                        <div class="card-body">
+                          <a href="https://e2-gray.vercel.app/" target="_blank" class="card-link stretched-link">Explore page</a>
+                          <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                        </div>
+                      </div>
+                      <div class="card" >
+                          <img class="card-img-top" src="img/3.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Minimal Blog Website Template</h5>
+                            <p class="card-text">simple Hero section of my blog.</p>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://whoprogrammer.github.io/4/" target="_blank" class="card-link stretched-link">Explore page</a>
+                            <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                          </div>
+                        </div>
+                        <div class="card" >
+                          <img class="card-img-top" src="img/4.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Beauty & Wellness eCommerce Landing...</h5>
+                            <p class="card-text">My beauty & wellness eCommerce Website Template.</p>
+                          </div>
+                          <div class="card-body">
+                            <a href="https://parvaj420.github.io/ecommerce-webpage-design.com/" target="_blank" class="card-link stretched-link">Explore page</a>
+                            <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                          </div>
+                        </div>
+                        <div class="card" >
+                            <img class="card-img-top" src="img/5.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Modern hero section design.</h5>
+                              <p class="card-text">Beauty and Wellness eCommerce Landing Page Design</p>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://whoprogrammer.github.io/1/" target="_blank" class="card-link stretched-link">Explore page</a>
+                              <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                            </div>
+                          </div>
+                          <div class="card" >
+                            <img class="card-img-top" src="img/6.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Modern hero section design.</h5>
+                              <p class="card-text">Beauty and Wellness eCommerce Landing Page Design.</p>
+                            </div>
+                            <div class="card-body">
+                              <a href="https://whoprogrammer.github.io/2/" target="_blank" class="card-link stretched-link">Explore page</a>
+                              <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                            </div>
+                          </div>
+                          <div class="card" >
+                              <img class="card-img-top" src="img/7.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Portfolio HERO section design.</h5>
+                                <p class="card-text"> My landing page template is designed for user portfolio.</p>
+                              </div>
+                              <div class="card-body">
+                                <a href="https://whoprogrammer.github.io/3/" target="_blank" class="card-link stretched-link">Explore page</a>
+                                <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                              </div>
+                            </div>
+                            <div class="card" >
+                              <img class="card-img-top" src="img/8.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title">Fashion eCommerce shop website template</h5>
+                                <p class="card-text">My fashion eCommerce website template design.</p>
+                              </div>
+                              <div class="card-body">
+                                <a href="https://parvaj420.github.io/e2/" target="_blank" class="card-link stretched-link">Explore page</a>
+                                <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                              </div>
+                            </div>
+                            <div class="card" >
+                                <img class="card-img-top" src="img/9.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Restaurant landing page</h5>
+                                  <p class="card-text">My Premium Restaurant Landing Page is designed for the modern restaurateur looking for a great website.</p>
+                                </div>
+                                <div class="card-body">
+                                  <a href="https://parvaj420.github.io/www.food-website.com/" target="_blank" class="card-link stretched-link">Explore page</a>
+                                  <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                                </div>
+                              </div>
+                              <div class="card" >
+                                <img class="card-img-top" src="img/10.png" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Portfolio design</h5>
+                                  <p class="card-text">simple portfolio landing Page design.</p>
+                                </div>
+                                <div class="card-body">
+                                  <a href="https://parvaj420.github.io/portfolio-website-design.com/" target="_blank" class="card-link stretched-link">Explore page</a>
+                                  <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                                </div>
+                              </div>
+                              <div class="card" >
+                                  <img class="card-img-top" src="img/11.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Construction & Contractors Website Template</h5>
+                                    <p class="card-text">Experience superior design with our industry-leading Construction Website Template.</p>
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="https://parvaj420.github.io/website-design.com/#" target="_blank" class="card-link stretched-link">Explore page</a>
+                                    <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                                  </div>
+                                </div>
+                                <div class="card" >
+                                  <img class="card-img-top" src="img/12.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Landing page design</h5>
+                                    <p class="card-text">simple landing page design</p>
+                                  </div>
+                                  <div class="card-body">
+                                    <a href="https://parvaj420.github.io/website-design.com/#" target="_blank" class="card-link stretched-link">Explore page</a>
+                                    <!-- <a href="#"target="_blank" class="card-link">Another link</a> -->
+                                  </div>
+                                </div>
+                                <div class="card" >
+                                    <img class="card-img-top" src="img/14.png" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Hero category for games advertising</h5>
+                                      <p class="card-text">This hero section is designed for game advertising.</p>
+                                    </div>
+                                    <div class="card-body">
+                                      <a href="https://whoprogrammer.github.io/6/" target="_blank" class="card-link stretched-link">Explore page</a>
+                                      <!-- <a href="d"target="_blank" class="card-link">Another link</a> -->
+                                    </div>
+                                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== SECTION2 =================== -->
+    <section class="section2" id=" section2 contact">
+      <div class="d-flex auto-w-h">
+        <div class="box1">
+          <!-- <h1>Come and join my monthly Website newsletter!</h1> -->
+          <h1>Let us create something new.</h1>
+          <p> If you want your site to be Responsive design for a better view in mobile, I am your right contractor for doing this. I am always available here and 24/7 services.</p>
+          <i class="fa-solid  i2"></i>
+          <label for="">
+            <input type="text" placeholder="Enter your email address">
+            <a href="https://www.fiverr.com/s/yD8D1A" target="_blank"><button>Contact me <i class="fa-regular fa-envelope"></i>  </i></button></a>
+          </label>
+        </div>
+        <div class="box2">
+          <div class="div">
+            <img src="img/m1.png" alt="">
+            <img src="img/m2.png" alt="">
+            <img src="img/m3.png" alt="">
+            <img src="img/m4.png" alt="">
+            <img src="img/m5.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== SECTION3 =================== -->
+    <section class="section3" id="section3">
+      <div class="box1 text-center">
+        <h1>Why choosing by WHO PROGRAMMER?</h1>
+        <p class="p">You can easily find what you are looking for. Fully responsive design, 100% satisfaction, unlimited revisions up to 100% satisfaction plus much more.</p>
+      </div>
+      <div class="box2">
+        <div class="row"></div>
+      </div>
+      <div class="box3">
+        <div>
+          <h5>And much more!</h5>
+        <p>Every website template I work on is carefully crafted to always give you and your users the best possible experience.</p>
+        </div>
+        
+        <a href="#section1"><button>Browse templates <i class="fa-solid fa-chevron-right i1"></i> <i class="fa-solid fa-arrow-right i2"></i></button></a>
+      </div>
+    </section>
+    <!-- ==================== SECTION4 =================== -->
+    <section class="section2">
+      <div class="row"></div>
+    </section>
+
+    <!-- ==================== FOOTER =================== -->
+    <footer class="container">
+      <div class="row">
+        <div class="col-md-4 let">
+          <a href="#hero"><img src="img/logo1.png" alt="" class="logo"></a>
+          <p>I create beautiful, modern, and easy-to-use website templates to improve the workflow of designers and developers.</p>
+          <div class="d-flex"></div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="item1">
+            <h5>Menu</h5>
+            <p>Home</p>
+            <p>About</p>
+            <p>Templates</p>
+            <p>Blog</p>
+            <p>Support</p>
+          </div>
+          <div class="item2">
+            <h5>Partners</h5>
+            <p>website-agency</p>
+            <p>Website</p>
+            <h5>Resources</h5>
+            <p>Website cloneables</p>
+          </div>
+        </div>
+        <div class="col-md-4 mbox">
+          <div>
+            <img src="img/s12.png" alt="">
+            <h5>Send us a message!</h5>
+            <p>Contact me and let me know how I can help you. I am waiting for your message. It's always just an email away.</p>
+            <a href="http://parvez1a2b9c@gmail.com" target="_blank"><button>Contact me  <i class="fa-solid fa-chevron-right i1"></i> <i class="fa-solid fa-arrow-right i2"></i></button></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom d-flex align-items-center justify-content-around w-100 flex-wrap border-top mt-5 pt-4 pb-2">
+        <p>Copyright © 2024 WHO PROGRAMMER | All Rights Reserved | Sitemap</p>
+        <p>WHO PROGRAMMER Templates is a company by WHO PROGRAMMER Agency</p>
+      </div>
+    </footer>
+    <div class="abs-icon d-flex align-items-center justify-content-center flex-wrap">
+       <a target="_blank" href="https://www.fiverr.com/s/AaZod3"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/fiverr-icon.png" alt=""></a>
+       <a target="_blank" href="https://www.upwork.com/freelancers/parvinb4?p=1757405733509926912" target="_blank" ><img src="https://www.pngrepo.com/png/331630/512/upwork.png" alt=""></a>
+       <a target="_blank" href="https://www.peopleperhour.com/site/register?rfrd=11028456.5"><img src="https://play-lh.googleusercontent.com/4bU1-gnsNaywON9CgID8Ejq9pu3GwwjLZSd_Y6VwN0x2vpfp4nhvYvrA28v4bdHs2NI" alt=""></a>
+       <a target="_blank" href="https://www.facebook.com/profile.php?id=61554918593318&mibextid=ZbWKwL"><img src="https://www.skyrocketventures.com/wp-content/uploads/2019/03/FB-Icon.jpg" alt=""></a>
+    </div>
+
+
+
+
+
+    <!-- ==================== MAIN =================== -->
+    </main>
+ 
+
+
+  <script src="script.js"></script>
+  <!--==================== ANIMATION js ===================-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    //  ALL SECTION 
+
+
+    // HERO
+    let label = document.querySelector('h1')
+        label.innerHTML = label.innerText.split('').map((letters, i) => `<span>${letters}</span>`).join('')
+
+        gsap.from('.hero h1',{
+            duration: 1.5,
+            x:100,
+            opacity:0,
+            stagger:.08,
+            delay:6
+          })
+        gsap.from('.hero h1 span',{
+            duration: 1.5,
+            x:200,
+            opacity:0,
+            stagger:.08,
+            delay:6
+          })
+        gsap.from('.hero p',{
+            duration: 1.5,
+            x:-200,
+            opacity:0,
+            stagger:.08,
+            delay:7
+          })
+        gsap.from('.hero .flex-wrap',{ 
+            duration: 1.5,
+            // x:300,
+            y:300,
+            opacity:0,
+            stagger:.4,
+            delay:7.4
+          })
+        gsap.from('.hero .auto-slid>div',{
+            duration: 1.5,
+            y:200,
+            opacity:0,
+            stagger:.1,
+            delay:7.9
+          })
+          // SECTION 1
+        gsap.from('.section1 .container ',{
+            duration: 10,
+            y:100,
+            opacity:0,
+            stagger:3,
+            scrollTrigger:{
+            trigger:".card",
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 100%",
+            scrub:5,
+                }
+          })
+          // SECTION 2
+        gsap.from('.section2 h1, .section2 p',{
+            duration: 2,
+            y:150,
+            opacity:0,
+            delay:1,
+            scrollTrigger:{
+            trigger:".section2",
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+        gsap.from('.section2 label',{
+            duration: 2,
+            y:150,
+            opacity:0,
+            delay:1,
+            scrollTrigger:{
+            trigger:".section2",
+            // scroller:"body",
+            // markers:true,
+            start:"30% 80%",
+            end:"30% 80%",
+            scrub:2,
+                }
+          })
+
+          // SECTION 3
+let sec3ani = document.querySelectorAll(".section3 .col-md-6") 
+        gsap.from('.section3 h1, .section3 .p',{
+            duration: 2,
+            y:200,
+            opacity:0,
+            stagger:.1,
+            scrollTrigger:{
+            trigger:".section2",
+            // scroller:"body",
+            // markers:true, 
+            start:"0% 80%",
+            end:"0% 80%",
+                } 
+          })
+        
+          function section3ani(nam) {
+            gsap.from(sec3ani[nam],{
+            duration: .4,
+            y:50,
+            opacity:0,
+            scrollTrigger:{
+            trigger:sec3ani[nam],
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+          }
+          section3ani("0")
+          section3ani("1")
+          section3ani("2")
+          section3ani("3")
+          section3ani("4")
+          section3ani("5")
+          section3ani("6")
+          section3ani("7")
+          section3ani("8")
+          section3ani("9")
+          gsap.from(".section3 .box3",{
+            duration: .4,
+            y:150,
+            opacity:0,
+            scrollTrigger:{
+            trigger:".section3 .box3",
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          }) 
+          // SECTION 4
+          let sec4 = document.querySelectorAll(".section4 .col-md-6")
+          gsap.from(sec4[0],{
+            duration: .4,
+            x:-250,
+            y:250,
+            opacity:0,
+            delay:.8,
+            rotate: -45,
+            scrollTrigger:{
+            trigger:sec4[0],
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+          gsap.from(sec4[1],{
+            duration: .4,
+            x:250,
+            y:250,
+            opacity:0,
+            delay:.8,
+            rotate: 45,
+            scrollTrigger:{
+            trigger:sec4[1],
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+
+
+
+          // footer
+          gsap.from("footer .logo",{
+            duration: .4,
+            x:-100,
+            opacity:0,
+            scrollTrigger:{
+            trigger:"footer .logo",
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+          gsap.from("footer .let p",{
+            duration: .4,
+            x:-100,
+            opacity:0,
+            scrollTrigger:{
+            trigger:"footer .let p",
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+          gsap.from("footer .item1",{
+            duration: .4,
+            y:200,
+            delay:.5,
+            opacity:0,
+            scrollTrigger:{
+            trigger:"footer .item1",
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+          gsap.from("footer .item2",{
+            duration: .4,
+            y:200,
+            delay:.5,
+            opacity:0,
+            scrollTrigger:{
+            trigger:"footer .item2",
+            // scroller:"body",
+            // markers:true,
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+          gsap.from("footer .mbox div",{
+            duration: .4,
+            x:100,
+            opacity:0,
+            delay:.7,
+            scrollTrigger:{
+            trigger:"footer .logo",
+            // scroller:"body",
+            start:"0 80%",
+            end:"0 80%",
+            scrub:2,
+                }
+          })
+          gsap.from("footer .bottom",{
+            background: "red", 
+            color: "white",
+            scrollTrigger:{
+            trigger:"footer .bottom",
+            start:"0 100%",
+            end:"0 100%",
+            scrub:2,
+                }
+          })
+
+  
+
+//  ALL SECTION
+  </script>
+</body>
+</html>
