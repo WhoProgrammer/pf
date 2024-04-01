@@ -210,6 +210,7 @@
             text-transform: uppercase;
             margin-left: 20px;
             font-weight: bolder;
+            text-wrap: nowrap
             }
             
           /* ==================== HEADER =================== */
@@ -435,6 +436,7 @@ img {
             display: flex;
             align-items: center;
             width: 100vw;
+            max-height: 700px;
             height: 100vh;
             overflow: hidden;
             padding-top: 50px;
@@ -570,6 +572,28 @@ img {
             position: relative !important;
         }
         /* left */
+        .filter-box-button{
+            font-size: 25px;
+            background: linear-gradient(45deg, rgb(224, 181, 255), rgb(197, 242, 255));
+            text-align: center;
+            width: 150px;
+            padding: 13px 0;
+            border-radius: 100px;
+            color: #ffffff !important;
+            font-weight: 400 !important;
+            position: absolute;
+            top: 20%;
+            z-index: 1;
+            display: none;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .filter-box-button:hover{
+            scale: 1.1;
+        }
+        .cross-icon{
+            display: none;
+        }
         .section1 .div{
             height: 50vh;
         }
@@ -636,30 +660,70 @@ img {
             height: 20rem;
             border-radius: 20px;
             box-shadow: 0 0 20px rgb(172, 172, 172);
-            position: absolute; 
-            z-index: 2;
-            background: rgba(220, 220, 220, 0.141);
-            backdrop-filter: blur(15px);
             top: 100%;
-            padding: 0vw;
             overflow: hidden;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content:baseline;
-            gap: 2vw;
-            transition: .3s;
+            justify-content:center;
             margin-top: 50px;
-            /* opacity: 0; */
-                padding: 5vw;
+            transition: .3s;
+            position: absolute; 
+            z-index: 2;
+            background: rgba(220, 220, 220, 0.141);
+            backdrop-filter: blur(15px);
             animation: dropAni .3s ease-in-out forwards;
+            gap: 2vw;
         }
         .check-box div{
-            border-bottom: none !important;
+            margin: 10px;
             margin-bottom: 0 !important;
-            color: #7c7c7c !important;
+            color: #1f1f1f !important;
             font-weight: normal !important;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            text-wrap: nowrap;
+        }
+        .check-box p{
+            text-align: center;
+            padding: 5px 10px;
+            background-color: rgba(88, 88, 88, 0);
+            color: rgb(149, 0, 255);
+            border-radius: 7px;
+            border: 1px solid rgb(128, 0, 255);
+            transition: .3s;
+            font-size: 17px;
+            padding: 5px;
+            cursor: pointer;
+            font-weight: 400;
+        }
+        .check-box  p:hover{
+            background-color: rgb(136, 0, 255);
+            color: rgb(255, 255, 255);
+        }
+        .check-box .d-flex{
+            border-bottom: none !important;
+        }
+        .color-div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .color-div div{
+            width: 97px;
+            height: 40px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .color-div .color1{
+            background: rgb(128, 0, 255);
+        }
+        .color-div .color2{
+            background: rgb(24, 23, 24);
+        }
+        .color-div .color3{
+            background: rgb(0, 105, 102);
+        }
+        .color-div .color4{
+            background: rgb(112, 106, 106);
         }
         /* drop down animation */
         /* .drop-ani{
@@ -674,7 +738,7 @@ img {
                 opacity: 1;
                 width: 25rem;
                 height: 20rem;
-                padding: 5vw;
+                /* padding: 5vw; */
             }
         }
         /* right */
@@ -685,7 +749,7 @@ img {
             margin: 10px;
             border-radius: 15px !important;
             overflow: hidden;
-            width: 17rem;
+            max-width: 17rem;
             height: 23rem;
             border: none !important;
             box-shadow: 0 0 20px rgb(219, 219, 219);
@@ -696,7 +760,16 @@ img {
             translate: 0 -15px;
         }
         .section1 .card img{
-            height: 50% !important;
+            height: 100% !important;
+            transition: .5s;
+        }
+        .section1 .card-img-div{
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+        }
+        .section1 .card:hover img{
+            scale: 1.2;
         }
         .section1 .card-body:nth-child(3){
             border-top: 1px solid rgb(173, 173, 173);
@@ -713,7 +786,7 @@ img {
         .card-text{
             font-size: 12px;
         }
-        .length{width: 10px; height: 1700px; background-color: rgba(255, 0, 0, 0);}
+        /* .length{width: 10px; height: 1700px; background-color: rgba(255, 0, 0, 0);} */
           /* ==================== SECTION2 =================== */
         .auto-w-h{
             width: 100%;
@@ -1031,7 +1104,7 @@ img {
                 align-items: center;
                 width: 100vw;
                 overflow: hidden;
-
+                max-height: max-content;
                 height: max-content;
                 flex-direction: column;
             }
@@ -1114,6 +1187,24 @@ img {
         }
             
         }
+        @media (max-width: 700px) {
+            .filter-box-button{
+                display: block;
+            }
+            .filter-box{
+                transition: .5s;
+                position: absolute !important;
+                left: 0; right: 0; margin: auto;
+                top: 0;
+                z-index: -1;
+                opacity: 0;
+            }
+            .cross-icon{display: block;}
+            .check-box{
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
 
         /* ==================== @MEDIA SCREEN 505 =================== */
     
@@ -1175,6 +1266,13 @@ img {
         /* ==================== @MEDIA SCREEN 403 =================== */
     
         @media (max-width:403px) {
+            /* LODING PAGE */
+            
+            .page-load .logo-name {
+                font-size: 4vw;
+                letter-spacing: 2vw;
+                margin-left: 20px;
+                }
             /* .SECTION3 */
             .section3 .box2  img{
                 width: 85px;
